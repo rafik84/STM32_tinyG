@@ -1,0 +1,15 @@
+xio.c:106:6:xio_reset_working_flags	0	static
+xio.c:123:6:xio_open_generic	32	static
+xio.c:160:7:xio_open	4	static
+xio.c:165:5:xio_gets	4	static
+xio.c:170:5:xio_getc	0	static
+xio.c:175:5:xio_putc	4	static
+xio.c:192:5:xio_ctrl_generic	0	static
+xio.c:184:5:xio_ctrl	0	static
+xio.c:215:5:xio_set_baud	8	static
+xio.c:225:6:xio_fc_null	0	static
+xio.c:239:6:xio_set_stdin	0	static
+xio.c:240:6:xio_set_stdout	0	static
+xio.c:241:6:xio_set_stderr	0	static
+xio.c:94:6:xio_init	8	static
+xio.c:253:9:xio_assertions	0	static

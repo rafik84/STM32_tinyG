@@ -1,0 +1,6 @@
+io.c:128:6:ioInit	96	static
+io.c:164:6:output_set	4	static
+io.c:169:6:output_set_action	40	static
+io.c:184:9:output_get_action_state	0	static
+io.c:195:9:input_get_state_by_action	12	static
+io.c:67:6:ioTask	32	static

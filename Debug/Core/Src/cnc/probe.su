@@ -1,0 +1,4 @@
+probe.c:23:6:probe_configure_invert_mask	0	static
+probe.c:7:6:probe_init	32	static
+probe.c:30:9:probe_get_state	8	static
+probe.c:40:6:probe_state_monitor	8	static

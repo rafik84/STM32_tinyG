@@ -1,0 +1,12 @@
+alarm.c:50:8:cm_alrm	8	static
+alarm.c:56:8:cm_shutd	8	static
+alarm.c:62:8:cm_pnic	8	static
+alarm.c:68:8:cm_clr	8	static
+alarm.c:82:6:cm_clear	0	static
+alarm.c:91:6:cm_parse_clear	16	static
+alarm.c:106:8:cm_is_alarmed	0	static
+alarm.c:123:6:cm_halt	8	static
+alarm.c:131:6:cm_halt_motion	8	static
+alarm.c:163:8:cm_alarm	16	static
+alarm.c:192:8:cm_shutdown	16	static
+alarm.c:226:8:cm_panic	16	static

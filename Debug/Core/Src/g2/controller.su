@@ -1,0 +1,4 @@
+controller.c:58:6:controller_init_assertions	0	static
+controller.c:43:6:controller_init	8	static
+controller.c:63:8:controller_test_assertions	0	static
+controller.c:87:6:controller_run	8	static

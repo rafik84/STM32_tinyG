@@ -1,0 +1,9 @@
+cycle_probing.c:184:15:_probing_start	8	static
+cycle_probing.c:202:15:_probing_finish	24	static
+cycle_probing.c:237:13:_probe_restore_settings	16	static
+cycle_probing.c:264:15:_probing_finalize_exit	8	static
+cycle_probing.c:269:15:_probing_error_exit	136	static
+cycle_probing.c:120:16:_probing_init	24	static
+cycle_probing.c:56:9:_set_pb_func	0	static
+cycle_probing.c:82:9:cm_straight_probe	24	static
+cycle_probing.c:103:9:cm_probe_callback	8	static

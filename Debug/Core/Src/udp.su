@@ -1,0 +1,7 @@
+udp.c:20:6:udp_reset_read_buffer	0	static
+udp.c:24:6:udpServerInit	8	static
+udp.c:44:6:udpSend	24	static
+udp.c:58:6:udpRecvBufferWrite	16	static
+udp.c:147:6:udpRecevie	96	static
+udp.c:116:9:udpRead	0	static
+udp.c:132:6:udpRecv	32	static

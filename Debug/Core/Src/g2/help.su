@@ -1,0 +1,7 @@
+help.c:25:13:_postscript	0	static
+help.c:12:8:help_stub	0	static
+help.c:37:9:help_general	8	static
+help.c:63:8:help_config	8	static
+help.c:96:8:help_test	8	static
+help.c:127:8:help_defa	8	static
+help.c:140:8:help_boot_loader	8	static

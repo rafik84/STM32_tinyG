@@ -1,0 +1,3 @@
+tool.c:11:6:toolInit	0	static
+tool.c:22:6:toolCurrentChange	48	static
+tool.c:53:6:toolProbeTLS	56	static

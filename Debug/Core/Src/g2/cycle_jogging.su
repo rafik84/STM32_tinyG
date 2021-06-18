@@ -1,0 +1,5 @@
+cycle_jogging.c:113:15:_jogging_axis_start	0	static
+cycle_jogging.c:118:15:_jogging_axis_jog	104	static
+cycle_jogging.c:165:15:_jogging_finalize_exit	16	static
+cycle_jogging.c:61:8:cm_jogging_cycle_start	16	static
+cycle_jogging.c:100:8:cm_jogging_callback	8	static

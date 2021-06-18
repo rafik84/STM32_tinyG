@@ -1,0 +1,3 @@
+xio_usb.c:25:5:xio_putc_usb	0	static
+xio_usb.c:142:10:xio_get_usb_rx_free	0	static
+xio_usb.c:150:6:xio_reset_usb_rx_buffers	0	static

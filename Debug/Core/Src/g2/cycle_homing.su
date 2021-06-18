@@ -1,0 +1,13 @@
+cycle_homing.c:344:15:_homing_axis_set_zero	16	static
+cycle_homing.c:363:15:_homing_axis_move	64	static
+cycle_homing.c:296:15:_homing_axis_clear	8	static
+cycle_homing.c:316:15:_homing_axis_search	16	static
+cycle_homing.c:338:15:_homing_axis_zero_backoff	8	static
+cycle_homing.c:419:15:_homing_finalize_exit	16	static
+cycle_homing.c:381:15:_homing_abort	8	static
+cycle_homing.c:323:15:_homing_axis_latch	8	static
+cycle_homing.c:396:15:_homing_error_exit.isra.1	136	static
+cycle_homing.c:197:15:_homing_axis_start	32	static
+cycle_homing.c:125:8:cm_homing_cycle_start	16	static
+cycle_homing.c:148:8:cm_homing_cycle_start_no_set	8	static
+cycle_homing.c:168:8:cm_homing_callback	8	static

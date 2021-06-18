@@ -1,0 +1,10 @@
+nuts.c:11:9:read_float	48	static
+nuts.c:84:6:delay_ms	0	static
+nuts.c:88:6:delay	0	static
+nuts.c:92:6:delay_sec	16	static
+nuts.c:108:7:hypot_f	16	static
+nuts.c:110:7:convert_delta_vector_to_unit_vector	32	static
+nuts.c:124:7:limit_value_by_axis_maximum	32	static
+nuts.c:135:7:map_float	24	static
+nuts.c:139:7:constrain_float	16	static
+nuts.c:149:7:mapConstrain	24	static

@@ -1,0 +1,1 @@
+stm32flash.exe -w nvem.hex -b 921600 COM3

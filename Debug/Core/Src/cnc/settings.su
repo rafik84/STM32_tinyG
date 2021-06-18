@@ -1,0 +1,10 @@
+settings.c:27:6:loadSettings	0	static
+settings.c:5:6:settings_init	0	static
+settings.c:31:6:saveSettings	0	static
+settings.c:99:9:settings_read_coord_data	0	static
+settings.c:106:6:settings_write_coord_data	16	static
+settings.c:36:6:settings_restore	24	static
+settings.c:116:9:settings_store_global_setting	16	static
+settings.c:218:6:storeTlsPosition	4	static
+settings.c:225:10:get_step_pin_mask	0	static
+settings.c:242:10:get_direction_pin_mask	0	static

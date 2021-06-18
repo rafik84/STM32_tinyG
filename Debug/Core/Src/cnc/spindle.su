@@ -1,0 +1,6 @@
+spindle.c:4:6:spindle_init	0	static
+spindle.c:10:6:spindle_stop	0	static
+spindle.c:14:9:spindle_get_state	0	static
+spindle.c:18:6:spindle_set_speed	0	static
+spindle.c:22:6:spindle_set_state	0	static
+spindle.c:34:6:spindle_sync	0	static

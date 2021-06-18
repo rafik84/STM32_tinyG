@@ -1,0 +1,5 @@
+print.c:3:6:print_uint8_base10	16	static
+print.c:19:6:print_uint8_base2_ndigit	16	dynamic
+print.c:32:6:print_uint32_base10	32	static
+print.c:51:6:printInteger	8	static
+print.c:60:6:printFloat	40	static

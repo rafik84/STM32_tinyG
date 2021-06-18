@@ -1,0 +1,10 @@
+json_parser.c:58:6:json_parser	80	static
+json_parser.c:321:10:json_serialize	48	static
+json_parser.c:397:6:json_print_object	8	static
+json_parser.c:439:6:json_print_response	64	static
+json_parser.c:410:6:json_print_list	0	static
+json_parser.c:522:8:json_set_jv	16	static
+json_parser.c:562:6:js_print_ej	0	static
+json_parser.c:563:6:js_print_jv	0	static
+json_parser.c:564:6:js_print_js	0	static
+json_parser.c:565:6:js_print_fs	0	static

@@ -1,0 +1,2 @@
+persistence.c:15:8:read_persistent_value	0	static
+persistence.c:20:8:write_persistent_value	0	static

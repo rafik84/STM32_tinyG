@@ -1,0 +1,5 @@
+encoder.c:20:6:encoder_init_assertions	0	static
+encoder.c:10:6:encoder_init	8	static
+encoder.c:25:8:encoder_test_assertions	0	static
+encoder.c:39:6:en_set_encoder_steps	16	static
+encoder.c:53:7:en_read_encoder	8	static

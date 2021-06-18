@@ -1,0 +1,9 @@
+motion.c:10:6:mc_sync_backlash_position	0	static
+motion.c:15:6:mc_init	24	static
+motion.c:37:6:mc_line	80	static
+motion.c:144:6:mc_arc	96	static
+motion.c:247:6:mc_dwell	8	static
+motion.c:255:6:mc_homing_cycle	8	static
+motion.c:311:9:mc_probe_cycle	32	static
+motion.c:376:6:mc_parking_motion	16	static
+motion.c:402:6:mc_reset	8	static

@@ -1,0 +1,12 @@
+tcp.c:64:14:TelnetAccept	24	static
+tcp.c:22:6:tcp_reset_read_buffer	0	static
+tcp.c:26:16:InitializeTelnetServer	16	static
+tcp.c:210:13:TelnetError	8	static
+tcp.c:113:6:tcpWrite	16	static
+tcp.c:257:6:TelnetRead	0	static
+tcp.c:272:6:TelnetWrite	0	static
+tcp.c:277:6:TelnetWriteString	8	static
+tcp.c:286:6:tcpIsConnected	0	static
+tcp.c:290:6:TelnetClose	16	static
+tcp.c:122:14:TelnetReceive	24	static
+tcp.c:224:7:TelnetPoll	16	static

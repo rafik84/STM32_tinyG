@@ -1,0 +1,4 @@
+gcode_parser.c:174:16:_point	24	static
+gcode_parser.c:30:8:gc_gcode_parser	80	static
+gcode_parser.c:504:8:gc_get_gc	8	static
+gcode_parser.c:510:8:gc_run_gc	0	static

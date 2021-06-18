@@ -1,0 +1,6 @@
+vfd.c:6:10:getCRC16	8	static
+vfd.c:25:6:USART6_IRQHandler	0	static
+vfd.c:31:6:vfd_info	0	static
+vfd.c:50:6:vfdTask	8	static
+vfd.c:62:6:initVFD	8	static
+vfd.c:77:6:vfdStr	0	static

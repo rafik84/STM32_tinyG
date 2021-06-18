@@ -1,0 +1,5 @@
+limits.c:18:6:limits_init	0	static
+limits.c:22:6:limits_disable	0	static
+limits.c:29:9:limits_get_state	8	static
+limits.c:79:6:limits_go_home	112	static
+limits.c:286:6:limits_soft_check	8	static

@@ -1,0 +1,11 @@
+plan_line.c:394:13:_plan_block_list	32	static
+plan_line.c:438:13:_reset_replannable_list	8	static
+plan_line.c:27:6:mp_zero_segment_velocity	0	static
+plan_line.c:28:7:mp_get_runtime_velocity	0	static
+plan_line.c:29:7:mp_get_runtime_absolute_position	0	static
+plan_line.c:30:6:mp_set_runtime_work_offset	12	static
+plan_line.c:31:7:mp_get_runtime_work_position	8	static
+plan_line.c:40:9:mp_get_runtime_busy	8	static
+plan_line.c:67:8:mp_aline	136	static
+plan_line.c:604:8:mp_plan_hold_callback	40	static
+plan_line.c:715:8:mp_end_hold	16	static

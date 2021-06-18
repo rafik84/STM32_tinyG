@@ -1,0 +1,13 @@
+pwm.c:43:6:pwm_init	0	static
+pwm.c:51:8:pwm_set_freq	8	static
+pwm.c:72:8:pwm_set_duty	8	static
+pwm.c:93:6:pwm_print_p1frq	0	static
+pwm.c:94:6:pwm_print_p1csl	0	static
+pwm.c:95:6:pwm_print_p1csh	0	static
+pwm.c:96:6:pwm_print_p1cpl	0	static
+pwm.c:97:6:pwm_print_p1cph	0	static
+pwm.c:98:6:pwm_print_p1wsl	0	static
+pwm.c:99:6:pwm_print_p1wsh	0	static
+pwm.c:100:6:pwm_print_p1wpl	0	static
+pwm.c:101:6:pwm_print_p1wph	0	static
+pwm.c:102:6:pwm_print_p1pof	0	static

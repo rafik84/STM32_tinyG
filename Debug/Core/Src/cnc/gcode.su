@@ -1,0 +1,5 @@
+gcode.c:35:6:gc_set_scaling	8	static
+gcode.c:48:8:gc_get_scaling	0	static
+gcode.c:52:6:gc_init	8	static
+gcode.c:63:6:gc_sync_position	0	static
+gcode.c:71:9:gc_execute_line	136	static

@@ -1,0 +1,6 @@
+plan_exec.c:316:13:_init_forward_diffs	72	static
+plan_exec.c:672:15:_exec_aline_segment	40	static
+plan_exec.c:577:15:_exec_aline_tail	24	static
+plan_exec.c:505:15:_exec_aline_body	24	static
+plan_exec.c:31:8:mp_exec_move	8	static
+plan_exec.c:125:8:mp_exec_aline	48	static
