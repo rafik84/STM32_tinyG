@@ -106,8 +106,7 @@ return len;
 
 __attribute__((weak)) int _write(int file, char *ptr, int len){
 	if(tcpIsConnected()){
-		//tcpWrite((char *) ptr, len);
-		TelnetWriteString(ptr);
+		tcpWrite((char *) ptr, len);
 		//HAL_USART_Transmit(&husart1, (uint8_t*)ptr, len, 1);
 	}else{
 		HAL_USART_Transmit(&husart1, (uint8_t*)ptr, len, 1);

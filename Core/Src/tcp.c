@@ -17,55 +17,12 @@ static err_t TelnetReceive(void *arg, struct tcp_pcb *pcb, struct pbuf *p,err_t 
 //static err_t TelnetSent(void *arg, struct tcp_pcb *pcb, u16_t len);
 static void TelnetError(void *arg, err_t err);
 
+
 void tcp_reset_read_buffer(){
 	tcp_rx_buffer_head = tcp_rx_buffer_tail;
 }
-#include "lwip/api.h"
 
-err_t TelnetSent(void *arg, struct tcp_pcb *pcb, u16_t len) {
-	/* See if this is for the game connection or for a secondary connection. */
-	if (arg) {
-		TelnetServer_t* server = (TelnetServer_t*) arg;
-		/* Decrement the count of outstanding bytes. */
-		server->outstanding -= len;
-	}
-	/* Return OK. */
-	return (ERR_OK);
-}
-
-TelnetStatus_t initTcpServer(void) {
-/**
-	struct netconn *conn, *newconn;
-	err_t err;
-	// create a connection structure
-	conn = netconn_new(NETCONN_TCP);
-	// bind the connection to port 2000 on any local IP address
-	netconn_bind(conn, NULL, 7);
-	printf("Now listening\n");
-	// tell the connection to listen for incoming connection requests
-	netconn_listen(conn);
-	// Grab new connection.
-	err = netconn_accept(conn, &newconn);
-	printf("accepted new connection %p\n", newconn);
-	// Process the new connection.
-	if (err == ERR_OK){
-		struct netbuf *buf;void *data;u16_t len;
-
-		while ((err = netconn_recv(newconn, &buf)) == ERR_OK){
-			printf("Received data\n");
-			do{
-				netbuf_data(buf, &data, &len);
-				err = netconn_write(newconn, data, len, NETCONN_COPY);
-				if (err != ERR_OK) printf("tcpecho: netconn_write: error \"%s\"\n", lwip_strerr(err));
-			}while (netbuf_next(buf) >= 0);
-			netbuf_delete(buf);
-		}
-
-		// Close connection and discard connection identifier.
-		netconn_close(newconn);
-		netconn_delete(newconn);
-	}
-**/
+TelnetStatus_t InitializeTelnetServer(void) {
 
 	telnet_server.length = 0;
 	telnet_server.outstanding = 0;
@@ -114,15 +71,13 @@ static err_t TelnetAccept(void *arg, struct tcp_pcb *pcb, err_t err) {
 		 a message indicating this fact. */
 		tcp_accepted(pcb);
 		tcp_arg(pcb, NULL);
-		tcp_sent(pcb, TelnetSent);
-		//tcp_sent(pcb, NULL);
+		//tcp_sent(pcb, TelnetSent);
+		tcp_sent(pcb, NULL);
 		tcp_output(pcb);
 		/* Temporarily accept this connection until the message is transmitted. */
 		return (ERR_OK);
 	}
 
-#undef TCP_PRIO_MAX
-#define TCP_PRIO_MAX    250
 	/* Setup the TCP connection priority. */
 	tcp_setprio(pcb, TCP_PRIO_MAX );//TCP_PRIO_NORMAL
 
@@ -145,11 +100,9 @@ static err_t TelnetAccept(void *arg, struct tcp_pcb *pcb, err_t err) {
 	/* Initialize lwIP tcp_err callback function for pcb  */
 	tcp_err(pcb, TelnetError);
 	/* Initialize lwIP tcp_poll callback function for pcb */
-	//tcp_poll(pcb, TelnetPoll, 1);
-	tcp_poll(pcb, NULL, 0);
+	tcp_poll(pcb, TelnetPoll, 1);
 	/* Setup the TCP sent callback function. */
-	//--tcp_sent(pcb, NULL);
-	tcp_sent(pcb, TelnetSent);
+	tcp_sent(pcb, NULL);
 	/* Do not close the telnet connection until requested. */
 	telnet_server.close = 0;
 	/* Return a success code. */
@@ -232,7 +185,7 @@ static void TelnetError(void *arg, err_t err) {
 	}
 	//
 	IsConnected = false;
-	initTcpServer();
+	InitializeTelnetServer();
 }
 
 err_t TelnetPoll(void *arg, struct tcp_pcb *tpcb) {
@@ -317,5 +270,5 @@ void TelnetClose(void) {
 	tcp_close(pcb);
 	IsConnected = false;
 	/* Re-initialize the Telnet Server */
-	initTcpServer();
+	InitializeTelnetServer();
 }

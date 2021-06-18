@@ -1,7 +1,7 @@
-util.c:21:9:vector_equal	16	static
-util.c:33:7:get_axis_vector_length	32	static
-util.c:42:8:set_vector	8	static
-util.c:52:8:set_vector_by_axis	16	static
+util.c:20:9:vector_equal	16	static
+util.c:32:7:get_axis_vector_length	32	static
+util.c:41:8:set_vector	8	static
+util.c:51:8:set_vector_by_axis	16	static
 util.c:82:7:min3	16	static
 util.c:90:7:min4	24	static
 util.c:99:7:max3	16	static

@@ -19,6 +19,7 @@
 #include "switch.h"
 #include "test.h"
 #include "pwm.h"
+#include "xio.h"
 /* Private variables ---------------------------------------------------------*/
 USART_HandleTypeDef husart1;
 struct netif gnetif; /* network interface structure */
@@ -56,7 +57,7 @@ int main(void){
   printf("Core clock %d MHz\r\n",(uint16_t)(SystemCoreClock / 1000000));
   printf("ST clock %d MHz\r\n",(uint16_t)(TIM_CLOCK / 1000000));
   printf("f= %f \r\n", 123.456);
-  initTcpServer() ;
+  InitializeTelnetServer() ;
   /* Start scheduler */
   osKernelStart();
   //------------------------------------------------------------------------------------------------------------------
@@ -71,7 +72,6 @@ int main(void){
 void tinyG(void const * argument){
 
 	stepper_timers_init();
-	hardware_init();
 	// do these next
 	stepper_init(); 					// stepper subsystem 				- must precede gpio_init()
 	encoder_init();						// virtual encoders

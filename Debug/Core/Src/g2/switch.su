@@ -6,7 +6,7 @@ switch.c:92:9:get_switch_thrown	0	static
 switch.c:96:6:set_switch_type	0	static
 switch.c:97:9:get_switch_type	0	static
 switch.c:103:6:reset_switches	0	static
-switch.c:114:9:read_switch	0	static
-switch.c:139:8:sw_set_st	8	static
-switch.c:146:8:sw_set_sw	16	static
-switch.c:163:6:sw_print_st	0	static
+switch.c:115:9:read_switch	0	static
+switch.c:141:8:sw_set_st	8	static
+switch.c:148:8:sw_set_sw	16	static
+switch.c:165:6:sw_print_st	0	static

@@ -1,2 +1,2 @@
-main.c:21:6:_system_init	0	static
-main.c:346:7:get_status_message	0	static
+main.c:22:6:_system_init	0	static
+main.c:347:7:get_status_message	0	static

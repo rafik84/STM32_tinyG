@@ -1,4 +1,4 @@
 plan_arc.c:53:6:cm_arc_init	0	static
-plan_arc.c:64:8:cm_arc_feed	48	static
-plan_arc.c:192:8:cm_arc_callback	48	static
-plan_arc.c:218:6:cm_abort_arc	0	static
+plan_arc.c:65:8:cm_arc_feed	48	static
+plan_arc.c:193:8:cm_arc_callback	48	static
+plan_arc.c:220:6:cm_abort_arc	0	static

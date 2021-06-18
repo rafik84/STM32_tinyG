@@ -25,9 +25,9 @@ void TelnetClose(void);
 void TelnetWrite(const char character) ;
 void TelnetRecvBufferWrite(uint8_t character);
 
-TelnetStatus_t initTcpServer(void);
+TelnetStatus_t InitializeTelnetServer(void);
 
-#define TELNET_BUFFER_LENGTH 		512
+#define TELNET_BUFFER_LENGTH 		128
 #define NOT_CONNECTED   			0
 #define CONNECTED       			1
 
@@ -45,8 +45,12 @@ typedef struct {
 #ifndef TCP_RX_BUFFER_SIZE
   #define TCP_RX_BUFFER_SIZE 1024
 #endif
+#ifndef TCP_TX_BUFFER_SIZE
+  #define TCP_TX_BUFFER_SIZE 64
+#endif
 
 #define TCP_RX_RING_BUFFER (TCP_RX_BUFFER_SIZE+1)
+#define TCP_TX_RING_BUFFER (TCP_TX_BUFFER_SIZE+1)
 
 void tcpWrite(void *arg,uint16_t len);
 #endif /* INC_TCP_ECHO_H_ */
